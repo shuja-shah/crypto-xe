@@ -11,20 +11,46 @@ const Home = () => {
     useEffect(() => {
         dispatch(getCoins());
     }, [dispatch]);
+    
+    const filteredCoins = coins.filter((coin) => coin.price > 100);
+    /* Filter coin based on their coin.rank and pick top ten */
+    const topTenCoins = coins.filter((coin) => coin.rank < 11);
 
     return (
-        <div>
-            <h1>Home</h1>
-            {loading && <h2>Loading...</h2>}
-            {error && <h2>{error}</h2>}
-            {coins.map((coin) => (
-                <div key={coin.id}>
-                    <h2>{coin.name}</h2>
-                    <p>{coin.symbol}</p>
-                    <p>{coin.price}</p>
-                </div>
-            ))}
-        </div>
+        <>
+            <section className="Intro">
+                <h1>Crypto Exchange</h1>
+                <p>Get the latest crypto prices and Details of over 160 Coins!</p>
+            </section>
+
+            <section className="MostPopular coinCatogory">
+                <h2>Most Popular Coins</h2>
+                {loading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
+                {filteredCoins.map((coin) => (
+                    <Widget key={coin.id} coin={coin} />
+                ))}
+
+            </section>
+
+            <section className="TopTen coinCatogory">
+                <h2>Top 10 Coins</h2>
+                {loading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
+                {topTenCoins.map((coin) => (
+                    <Widget key={coin.id} coin={coin} />
+                ))}
+            </section>
+
+            <section className="AllCoins coinCatogory">
+                <h2>All Coins</h2>
+                {loading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
+                {coins.map((coin) => (
+                    <Widget key={coin.id} coin={coin} />
+                ))}
+            </section>
+        </>
     );
 };
 
