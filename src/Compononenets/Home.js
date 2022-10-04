@@ -1,3 +1,5 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import { getCoins } from "../Redux/coins/coins";
 
 const Home = () => {
