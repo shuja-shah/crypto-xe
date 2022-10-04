@@ -13,14 +13,13 @@ const Home = () => {
     }, [dispatch]);
     
     const filteredCoins = coins.filter((coin) => coin.price > 100);
-    /* Filter coin based on their coin.rank and pick top ten */
     const topTenCoins = coins.filter((coin) => coin.rank < 11);
 
     return (
         <>
             <section className="Intro">
                 <h1>Crypto Exchange</h1>
-                <p>Get the latest crypto prices and Details of over 160 Coins!</p>
+                <p>Get the latest crypto prices and Details of over 50 Coins!</p>
             </section>
 
             <section className="MostPopular coinCatogory">
