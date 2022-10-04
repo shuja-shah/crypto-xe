@@ -1,9 +1,9 @@
-import Home from "./Compononenets/Home";
+import Home from './Compononenets/Home';
 
-export default function App () {
-    return (
-        <div>
-            <Home />
-        </div>
-    );
+export default function App() {
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
