@@ -22,24 +22,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 150px;
 }
 
 .Widget img {
     order: -1;
     width: 50px;
     margin: 1.2rem 0.575rem 0 .575rem;
+    align-self: center;
 }
 
 .Widget div {
     padding: 1.4rem 1.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .Widget div > h3 {
-    margin-right: 0.575rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .Widget div > p {
@@ -47,10 +50,13 @@ body {
 }
 
 .coinCatogory {
-    /* make a grid , put 3 widgets per row , set the row to adapt number of widgets */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1rem;
-    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
 
+.title {
+    font-size: 2rem;
+    margin: 1.8rem 0;
+    text-align: center;
 }

@@ -22,9 +22,8 @@ const Home = () => {
         <h1>Crypto Exchange</h1>
         <p>Get the latest crypto prices and Details of over 50 Coins!</p>
       </section>
-
+      <h2 className="title">Most Popular Coins</h2>
       <section className="MostPopular coinCatogory">
-        <h2>Most Popular Coins</h2>
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {filteredCoins.map((coin) => (
@@ -32,18 +31,16 @@ const Home = () => {
         ))}
 
       </section>
-
+      <h2 className="title">Top 10 Coins</h2>
       <section className="TopTen coinCatogory">
-        <h2>Top 10 Coins</h2>
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {topTenCoins.map((coin) => (
           <Widget key={coin.id} coin={coin} />
         ))}
       </section>
-
+      <h2 className="title">All Coins</h2>
       <section className="AllCoins coinCatogory">
-        <h2>All Coins</h2>
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {coins.map((coin) => (
