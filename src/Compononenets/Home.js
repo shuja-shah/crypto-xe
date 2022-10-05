@@ -16,6 +16,8 @@ const Home = () => {
   const filteredCoins = coins.filter((coin) => coin.price > 100);
   const topTenCoins = coins.filter((coin) => coin.rank < 11);
   const RisingStars = coins.filter((coin) => coin.rank > 10 && coin.rank < 21);
+  const topGainers = coins.filter((coin) => coin.marketCap >= 1000000000);
+  const finalTopGainer = topGainers.slice(0, 4);
 
   return (
     <>
@@ -45,6 +47,14 @@ const Home = () => {
         {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {RisingStars.map((coin) => (
+          <Widget key={coin.id} coin={coin} />
+        ))}
+      </section>
+      <h2 className="title">Top Gainers</h2>
+      <section className="TopGainers coinCatogory">
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+        {finalTopGainer.map((coin) => (
           <Widget key={coin.id} coin={coin} />
         ))}
       </section>
