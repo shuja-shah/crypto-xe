@@ -4,8 +4,16 @@ const Details = () => {
   const coinDetails = useSelector((state) => state.details.details.coin);
   const loading = useSelector((state) => state.details.loading);
   const price = parseInt(coinDetails.price, 10).toFixed(4).toString();
-  /* remove price and name from coinDetails */
-  const { price: _, name: __, ...rest } = coinDetails;
+  const {
+    price: _,
+    name: __,
+    sparkline: ___,
+    iconUrl: ____,
+    color: _____,
+    uuid: ______,
+    coinrankingUrl: _______,
+    ...rest
+  } = coinDetails;
   return (
     <>
       <section className="Details">
@@ -20,7 +28,13 @@ const Details = () => {
       <ul className="detailsList">
         {Object.entries(rest).map(([key, value]) => (
           <li key={key}>
-            <span>{key}</span>
+            <span className="entry">
+              {key}
+              {' '}
+              :
+            </span>
+            {'    '}
+            {' '}
             <span>{value}</span>
           </li>
         ))}
