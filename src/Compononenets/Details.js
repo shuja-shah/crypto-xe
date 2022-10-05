@@ -5,7 +5,6 @@ const Details = () => {
   const loading = useSelector((state) => state.details.loading);
   const price = parseInt(coinDetails.price, 10).toFixed(4).toString();
   const {
-    price: _,
     name: __,
     sparkline: ___,
     iconUrl: ____,
