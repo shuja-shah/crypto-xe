@@ -63,3 +63,24 @@ body {
     font-family: 'Lato' , sans-serif;
     color: var(--color-txt);
 }
+
+.icon {
+    width: auto;
+    height: 20px;
+    fill: var(--color-txt);
+}
+
+.btn {
+    border: none;
+    background-color: #DD4883;
+    width: auto;
+    order: -2;
+    align-self: flex-end;
+    margin: calc(1.2rem - 1px) 0.775rem 0 0;
+    cursor:pointer;
+}
+
+.btn :hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
