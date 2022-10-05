@@ -25,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 150px;
+    background-color: #DD4883;
 }
 
 .Widget img {
