@@ -16,6 +16,24 @@ body {
   background-color: var(--color-primary);
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-txt);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 150px;
+}
+
 .Intro {
   display: flex;
   flex-direction: column;
