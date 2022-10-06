@@ -17,36 +17,36 @@ body {
 }
 
 .Intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: var(--color-primary);
-    color: var(--color-txt);
-    font-family: 'Inter', sans-serif;
-    padding: 0 24px;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-txt);
+  font-family: 'Inter', sans-serif;
+  padding: 0 24px;
+  font-size: 1.5rem;
 }
 
 .Intro p {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 24px;
 }
 
 .Intro::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid var(--color-txt);
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--color-txt);
 }
 
 .Widget {
@@ -60,7 +60,8 @@ body {
   background-color: #dd4883;
 }
 
-.Widget img {
+.Widget img,
+.con {
   order: -1;
   width: 50px;
   margin: 1.2rem 0.575rem 0 0.575rem;
@@ -115,4 +116,60 @@ body {
 .btn :hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
+}
+
+.Details {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fefdfb;
+  font-family: 'Inter', sans-serif;
+}
+
+.goBack {
+  align-self: flex-start;
+  background-color: #ec4c8a !important;
+  padding: 1.2rem 0.8rem;
+}
+
+.det {
+  display: flex;
+  margin: 0.845rem 0.575rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detailsList {
+  display: grid;
+  padding: 0.845rem 24px;
+  list-style: none;
+}
+
+.detailsList :nth-child(even) {
+  background-color: #ce4177;
+}
+
+.detailsList :nth-child(odd) {
+  background-color: #e84987;
+}
+
+.detailsList li {
+  padding: 1.5rem 0.575rem;
+  text-align: left;
+  color: var(--color-txt);
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spani {
+  font-weight: 600;
+  background-color: inherit;
 }
