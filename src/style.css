@@ -173,3 +173,80 @@ body {
   font-weight: 600;
   background-color: inherit;
 }
+
+@media screen and (min-width: 540) {
+  .Intro {
+    font-size: 1.6rem;
+  }
+
+  .Intro p {
+    font-size: 1.2rem;
+  }
+
+  .Widget {
+    width: 200px;
+  }
+
+  .Widget img {
+    width: 60px;
+  }
+
+  .Widget div > h3 {
+    font-size: 1.5rem;
+  }
+
+  .coinCatogory {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    margin: calc(1.2rem - 1px) 1.2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Intro {
+    font-size: 2rem;
+  }
+
+  .Intro p {
+    font-size: 1.5rem;
+  }
+
+  .Widget {
+    width: 350px;
+  }
+
+  .Widget img {
+    width: 70px;
+  }
+
+  .Widget div > h3 {
+    font-size: 1.5rem;
+  }
+
+  .coinCatogory {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .btn {
+    margin: calc(1.2rem - 1px) 1.5rem 0 0;
+  }
+
+  .detailsList li {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .con {
+    width: 100px;
+  }
+}
