@@ -13,3 +13,9 @@ createRoot(document.getElementById('root')).render(
     </PersistGate>
   </Provider>,
 );
+
+setTimeout(() => {
+  localStorage.clear();
+  window.location.reload();
+},
+300000);
