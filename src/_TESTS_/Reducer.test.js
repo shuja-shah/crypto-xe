@@ -1,4 +1,4 @@
-import coinReducer, { getCoins } from '../Redux/coins/coins';
+import coinReducer from '../Redux/coins/coins';
 
 describe('reducer', () => {
   it('should handle initial state', () => {
@@ -12,7 +12,7 @@ describe('reducer', () => {
   it('should handle GET_COINS', () => {
     expect(
       coinReducer([], {
-        type: getCoins.type,
+        type: 'crypto-xe/coins/GET_COINS',
         payload: [{ id: 1, name: 'Bitcoin' }],
       }),
     ).toEqual({
