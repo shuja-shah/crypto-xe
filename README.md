@@ -1,56 +1,54 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# **Crypto Exhange** :gem:
 
-# Project Name
-
-> Description the project.
-
+- [ ] **Description** :memo:
+- This is a simple crypto exchange app that allows users visualize upto 50 crypto currencies.
+- The project is built using React and Redux.
+- The project is deployed on Netlify.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Redux
+- CSS
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+# Live Demo Link:
+[live demo](https://cryptoxe.netlify.app)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- Clone the project unto your local machine using the ``` code ``` button.
+- cd into the project directory
 
-### Setup
+
+Then Follow the Install Steps below
 
 ### Install
+ - To Install, run the following command:
+``` npx install  ```
+Then run the following command
+``` npm start ```
 
 ### Usage
+- To use the app, run the following command:
+``` npm start ```
+Then open the browser and go to the following link:
+``` http://localhost:3000/ ```
 
-### Run tests
 
-### Deployment
+### Tests
+- To run the tests, run the following command:
+``` npm test ```
+
+# Authors
+
+👤 **Syed Shuja Hussain (He/Him)**
+
+- GitHub: [@shuja-shah](https://github.com/shuja-shah)
+- Twitter : [@SyedShujaHussa3](https://twitter.com/SyedShujaHussa3)
+- LinkedIn :[@syedshujahussa](https://www.linkedin.com/in/syedshujahussa/)
 
 
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,12 +62,12 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The Awesome Teamwork! and Microverse!
+- Kevin Powell and His Awsome Tutorials :heart:
+- The Awesome Code Reviewers :heart:
+-  Nelson Sakwa For this Awesome Desing :heart:
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
