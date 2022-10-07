@@ -192,6 +192,21 @@ nav {
   background-color: inherit;
 }
 
+#category {
+  margin: 2rem 0;
+  padding: 0.575rem 3rem;
+}
+
+.lesGo {
+  text-decoration: none;
+  color: var(--color-txt);
+  border: 1px solid var(--color-txt);
+  padding: 0.575rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
 @media screen and (min-width: 540) {
   .Intro {
     font-size: 1.6rem;
