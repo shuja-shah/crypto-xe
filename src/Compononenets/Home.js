@@ -24,6 +24,15 @@ const Home = () => {
       <section className="Intro">
         <h1>Crypto Exchange</h1>
         <p>Get the latest crypto prices and Details of over 50 Coins!</p>
+        <form className="form">
+          <select name="category" id="category">
+            <option value="all">All</option>
+            <option value="topTenCoins">Top 10 Coins</option>
+            <option value="RisingStars">Rising Stars</option>
+            <option value="finalTopGainer">Top Gainers</option>
+          </select>
+          <a className="lesGo btn" href="coins">Go</a>
+        </form>
       </section>
       <h2 className="title">Most Popular Coins</h2>
       <section className="MostPopular coinCatogory">
