@@ -65,6 +65,7 @@ Give a ⭐️ if you like this project!
 - The Awesome Teamwork! and Microverse!
 - Kevin Powell and His Awsome Tutorials :heart:
 - The Awesome Code Reviewers :heart:
+-  Nelson Sakwa For this Awesome Desing :heart:
 
 ## 📝 License
 
